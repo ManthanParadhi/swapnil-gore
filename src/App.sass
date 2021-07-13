@@ -2,13 +2,6 @@
 
 body
     margin: 0
-.navMenu
-    width: 15vw
-    height: 80vh
-    position: fixed
-
-    .navlink
-        text-decoration: none
     .nav-items
         display: flex
         background-color: rgba(0, 0, 0, 0.2)
@@ -33,10 +26,28 @@ body
             transform: scale(1.1)
             animation: transform 0.2s
 
-.homecarousel
+.slider
     img
-        height: 40vh
-        width: 80vw
-        left: 15vw
-        top: 5vh
+        width: 90%
+        min-height: 100%
+        max-height: 110%
+    .arrow-r
         position: absolute
+        right: 4.5%
+        width: 20%
+        cursor: pointer
+        fill: rgba(0, 0, 0, 0.2)
+        &:hover
+            background-color: rgba(0, 0, 0, 0.05)
+            fill: rgba(0, 0, 0, 0.5)
+
+    .arrow-l
+        position: absolute
+        right: 63%
+        width: 20%
+        transform: rotate(180deg)
+        cursor: pointer
+        fill: rgba(0, 0, 0, 0.2)
+        &:hover
+            background-color: rgba(0, 0, 0, 0.05)
+            fill: rgba(0, 0, 0, 0.5)
