@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../Component/Navigation";
 import Carousel from "./Carousel";
+import "../Css/home.css";
 
 const Home = () => {
   return (
@@ -9,9 +10,9 @@ const Home = () => {
         <div className="col-span-1">
           <Navigation />
         </div>
-        <div className="col-span-7">
+        {/* <div className="col-span-7">
           <Carousel />
-        </div>
+        </div> */}
       </div>
     </>
   );

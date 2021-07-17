@@ -20,7 +20,7 @@ const Carousel = () => {
       autoPlayRef.current();
     };
 
-    const interval = setInterval(play, 2000);
+    const interval = setInterval(play, 5000);
     return () => clearInterval(interval);
   }, [run]);
 
